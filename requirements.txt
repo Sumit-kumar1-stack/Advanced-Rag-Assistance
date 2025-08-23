@@ -1,0 +1,24 @@
+# Core
+langchain>=0.2.6
+langchain-community>=0.2.6
+langchain-openai>=0.1.14
+langchain-text-splitters>=0.0.2
+python-dotenv>=1.0.1
+tqdm>=4.66.4
+rich>=13.7.1
+loguru>=0.7.2
+
+# Vector stores
+faiss-cpu>=1.8.0.post1
+chromadb>=0.5.5
+
+# Embeddings
+sentence-transformers>=3.0.1
+
+# Document loaders
+pypdf>=4.2.0
+
+# APIs / UI
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+streamlit>=1.36.0

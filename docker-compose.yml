@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  rag:
+    build: .
+    container_name: rag-assistant
+    env_file: .env
+    ports:
+      - "8501:8501"   # Streamlit
+      - "8000:8000"   # FastAPI
+    volumes:
+      - ./data:/app/data
+      - ./vectorstore:/app/vectorstore
